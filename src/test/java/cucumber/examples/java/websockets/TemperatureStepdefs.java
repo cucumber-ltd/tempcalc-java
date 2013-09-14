@@ -20,7 +20,8 @@ public class TemperatureStepdefs {
     }
 
     @Then("^I should see (.+) (celcius|fahrenheit)$")
-    public void i_should_see_temperature(double value, String unit) {
+    public void i_should_see_temperature(double value, String unit) throws InterruptedException {
+        Thread.sleep(500);
         assertEquals(String.valueOf(value), webDriver.findElement(By.id(unit)).getAttribute("value"));
     }
 }
