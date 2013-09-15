@@ -18,4 +18,4 @@ Feature: Temperature conversion
   Scenario: 0 Fahrenheit to Celcius
     Given I am on the front page
     When I enter 0 fahrenheit
-    Then I should see -17.7 celcius
+    Then I should see -17.8 celcius
