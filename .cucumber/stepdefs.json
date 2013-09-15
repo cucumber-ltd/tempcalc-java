@@ -25,6 +25,19 @@
         ]
       },
       {
+        "name": "I enter 0 fahrenheit",
+        "args": [
+          {
+            "offset": 8,
+            "val": "0"
+          },
+          {
+            "offset": 10,
+            "val": "fahrenheit"
+          }
+        ]
+      },
+      {
         "name": "I enter 100 celcius",
         "args": [
           {
@@ -56,6 +69,19 @@
   },
   {
     "steps": [
+      {
+        "name": "I should see -17.7 celcius",
+        "args": [
+          {
+            "offset": 13,
+            "val": "-17.7"
+          },
+          {
+            "offset": 19,
+            "val": "celcius"
+          }
+        ]
+      },
       {
         "name": "I should see 212.0 fahrenheit",
         "args": [
