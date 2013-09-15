@@ -1,8 +1,10 @@
 language: java
-script: mvn -q test
+script: mvn -q test -Dcucumber.options="--format cucumber.pro.CucumberFormatter:http://cucumber-pro.herokuapp.com"
 jdk:
 - oraclejdk7
-
 before_install:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+env:
+  global:
+    secure: IdP4+7pAGRsYf0AprOMVdy4mtO88F59foJCll0W6K0/7utDDkf+By9rB4oWXm6UiXa0b8UJGn8kjc64bg/Z96qC/co4Y+bbg7A1c9JLNvAUuhuh4q9cQFHXwey8O5zVlZhmfVW9J14FB/BtAdRa1Edk76cA0RwRUGiIF92eO+H0=

@@ -1,0 +1,102 @@
+[
+  {
+    "steps": [
+      {
+        "name": "I am on the front page",
+        "args": []
+      }
+    ],
+    "source": "^I am on the front page$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I enter 0 celcius",
+        "args": [
+          {
+            "offset": 8,
+            "val": "0"
+          },
+          {
+            "offset": 10,
+            "val": "celcius"
+          }
+        ]
+      },
+      {
+        "name": "I enter 100 celcius",
+        "args": [
+          {
+            "offset": 8,
+            "val": "100"
+          },
+          {
+            "offset": 12,
+            "val": "celcius"
+          }
+        ]
+      },
+      {
+        "name": "I enter 100 fahrenheit",
+        "args": [
+          {
+            "offset": 8,
+            "val": "100"
+          },
+          {
+            "offset": 12,
+            "val": "fahrenheit"
+          }
+        ]
+      }
+    ],
+    "source": "^I enter (.+) (celcius|fahrenheit)$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I should see 212.0 fahrenheit",
+        "args": [
+          {
+            "offset": 13,
+            "val": "212.0"
+          },
+          {
+            "offset": 19,
+            "val": "fahrenheit"
+          }
+        ]
+      },
+      {
+        "name": "I should see 32.0 fahrenheit",
+        "args": [
+          {
+            "offset": 13,
+            "val": "32.0"
+          },
+          {
+            "offset": 18,
+            "val": "fahrenheit"
+          }
+        ]
+      },
+      {
+        "name": "I should see 37.8 celcius",
+        "args": [
+          {
+            "offset": 13,
+            "val": "37.8"
+          },
+          {
+            "offset": 18,
+            "val": "celcius"
+          }
+        ]
+      }
+    ],
+    "source": "^I should see (.+) (celcius|fahrenheit)$",
+    "flags": ""
+  }
+]
