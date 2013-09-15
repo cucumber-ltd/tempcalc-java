@@ -14,3 +14,8 @@ Feature: Temperature conversion
     Given I am on the front page
     When I enter 100 fahrenheit
     Then I should see 37.8 celcius
+
+  Scenario: 0 Fahrenheit to Celcius
+    Given I am on the front page
+    When I enter 0 fahrenheit
+    Then I should see -17.8 celcius
