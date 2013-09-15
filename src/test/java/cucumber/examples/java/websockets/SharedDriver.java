@@ -60,7 +60,9 @@ public class SharedDriver extends EventFiringWebDriver {
 
     @After
     public void embedScreenshot(Scenario scenario) {
-        byte[] screenshot = getScreenshotAs(OutputType.BYTES);
-        scenario.embed(screenshot, "image/png");
+        if(scenario.isFailed()) {
+            byte[] screenshot = getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "image/png");
+        }
     }
 }
