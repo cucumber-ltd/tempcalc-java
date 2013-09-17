@@ -13,4 +13,4 @@ Feature: Temperature conversion
   Scenario: -40 F to C
   	Given I am on the front page
     When I enter -40 fahrenheit
-    Then I should see -40 celcius
+    Then I should see -40.00 celcius
