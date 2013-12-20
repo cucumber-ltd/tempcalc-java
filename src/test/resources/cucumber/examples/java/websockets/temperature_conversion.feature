@@ -1,5 +1,5 @@
 Feature: Temperature conversion
-  The user can convert bertween Celcius and Fahrenheit
+  The user can convert between Celcius and Fahrenheit
 
   Scenario: 0 Celcius to Fahrenheit
     Given I am on the front page
