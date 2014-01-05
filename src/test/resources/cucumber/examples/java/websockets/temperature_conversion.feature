@@ -5,3 +5,5 @@ Feature: Temperature conversion
     Given I am on the front page
     When I enter 0 celcius
     Then I should see 32.0 fahrenheit
+
+  Scenario: 100 Celcius to Fahrenheit!
